@@ -1,52 +1,33 @@
-	.env
-	config.py
-	*.pyc
-__pycache__/
-congig.py
-*/congig.py
-scripts/config.py
-.ipynb_checkpoints
-*/.ipynb_checkpoints/*
-# Byte-compiled / optimized / DLL files
+# Ignore Python compiled files
 __pycache__/
 *.py[cod]
-*$py.class
+*.pyo
+*.pyd
 
-# C extensions
-*.so
-
-# Distribution / packaging
-build/
-dist/
-*.egg-info/
-*.egg
-
-# Virtual environments & environment files
-env/
-venv/
-.venv/
-ENV/
+# Ignore environment / local config files
 .env
-*.env
+.env.*    # e.g. .env.local, etc
 
-# Jupyter Notebook checkpoints
+# Ignore your config file in scripts folder
+scripts/config.py
+
+# Ignore Jupyter notebook checkpoints
 .ipynb_checkpoints/
+**/.ipynb_checkpoints/
 
-# IDE / Editor folders
-.vscode/
-.idea/
-*.sublime-workspace
-*.sublime-project
+# Ignore data / database / binary files
+*.sqlite3
+*.db
+*.bin
+*.log
 
-# OS generated files
+# Ignore system files
 .DS_Store
 Thumbs.db
 
-# ChromaDB persistence folder
-chroma_db/
-
-# Secrets / config files
-config.py
-*.key
-*.secret
-
+# Ignore build / dist / virtualenv
+build/
+dist/
+*.egg-info/
+venv/
+.env/
