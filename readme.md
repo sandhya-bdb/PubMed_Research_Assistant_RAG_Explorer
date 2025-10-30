@@ -1,4 +1,4 @@
-# PubMed-RAG-Explorer,a Reserach Assistant - Streamlit Web App 🧬
+# PubMed-RAG-Explorer,a Research Assistant - Streamlit Web App 🧬
 
 A **Retrieval-Augmented Generation (RAG)** system wrapped in a user-friendly Streamlit web interface, enabling users to:
 
