@@ -1,0 +1,10 @@
+	.env
+	config.py
+	*.pyc
+__pycache__/
+congig.py
+*/congig.py
+scripts/config.py
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
