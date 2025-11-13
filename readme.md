@@ -34,15 +34,15 @@ With this app you can:
 ---
 ## 🗂 Project Structure
 
-pubmed_rag_app/
-├── app.py # Main Streamlit application (UI)
-├── pubmed.py # Module: search & fetch PubMed PMIDs/metadata
-├── vector_store.py # Module: embed documents, ingest into ChromaDB, query
-├── summarizer.py # Module: build prompt & call Groq LLaMA-3 for answer
-├── config.py # Config file: paths, model names, environment variable reading
-├── requirements.txt # Python dependencies
-├── .gitignore # Files/folders to ignore from version control
-└── README.md # This documentation
+    pubmed_rag_app/
+    ├── app.py # Main Streamlit application (UI)
+    ├── pubmed.py # Module: search & fetch PubMed PMIDs/metadata
+    ├── vector_store.py # Module: embed documents, ingest into ChromaDB, query
+    ├── summarizer.py # Module: build prompt & call Groq LLaMA-3 for answer
+    ├── config.py # Config file: paths, model names, environment variable reading
+    ├── requirements.txt # Python dependencies
+    ├── .gitignore # Files/folders to ignore from version control
+    └── README.md # This documentation
 
 ---
 
