@@ -71,8 +71,9 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 5. Run the Streamlit app
 streamlit run app.py
 Open the URL shown in the terminal (usually http://localhost:8501) in your browser.
- 
-🧩 Usage Guide
+```
+
+### 🧩 Usage Guide
 A. Search & Ingest Documents
 •	Use the sidebar to input your search term and set maximum number of results (default: 50)
 •	Click Search & Ingest
@@ -85,26 +86,26 @@ B. Ask a Question
 •	Then it will use LLaMA-3 (Groq) to generate an answer, which will be shown below
 •	Documents are listed with their PMIDs, titles and abstract snippets for transparency
  
-📌 Configuration Options
+### 📌 Configuration Options
 •	Embedding model: Configured in config.py under EMBEDDING_MODEL_NAME (default: all-MiniLM-L6-v2)
 •	Vector store path: Default directory PERSIST_DIR = "chroma_db"
 •	Groq model: Defined in config.py as GROQ_MODEL = "llama3-70b-8192" (or whichever variant you have access to)
 •	Top-k results: TOP_K_RESULTS (default: 5) controls how many documents to retrieve for each query
  
-🛡 Security & Secrets
+### 🛡 Security & Secrets
 •	Never commit your API keys (e.g., GROQ_API_KEY) or secret credentials in source files
 •	Use .env or environment variables to store secrets locally
 •	Ensure config.py only reads environment variables (does not hard-code keys)
 •	Add .env, config.py (if containing secrets) and other sensitive files to .gitignore
 •	If you ever accidentally commit a key, revoke/rotate it immediately
  
-🤝 Contributing
+### 🤝 Contributing
 Contributions are welcome!
 •	Fork the repository and create a new branch (git checkout -b feature-xyz)
 •	Adhere to PEP8 / consistent formatting
 •	Add tests or validation if applicable
 •	Submit a pull request with a clear description of changes
-📅 Future Roadmap
+### 📅 Future Roadmap
 •	✅ Core functionality: search, ingest, query, answer
 •	🔧 Add metadata filters (e.g., publication year, journal, authors)
 •	🌐 Deploy the app publicly (e.g., Streamlit Cloud, Heroku)
